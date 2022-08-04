@@ -1,0 +1,165 @@
+.nav {
+  /*border: 3rem var(--tagla) dotted;*/
+  display: grid;
+  width: 660rem;
+  grid-template-columns: 70px 2fr 100px 70px;
+  grid-template-rows: max-content 1fr;
+  background: var(--chiboc);
+
+  &__logo {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    height: 50rem;
+    width: 280rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 20rem;
+    background: var(--light);
+    margin: 20rem;
+    border-radius: 30rem;
+  }
+
+  &__happy {
+    color: var(--tagla);
+    margin-top: 5rem;
+    margin-left: 1rem;
+  }
+
+  &__portugal {
+    color: var(--alert);
+    margin-top: 5rem;
+    margin-left: 5rem;
+  }
+
+  &__hamburger {
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    margin-top: 5rem;
+  }
+
+  &__toggle {
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+  }
+
+  &__dropl {
+    grid-column: 1 / 5;
+    grid-row: 2 / 3;
+    background: var(--chiboc);
+    padding-left: 20rem;
+    padding-top: 10rem;
+    font-size: 20rem;
+    font-weight: bold;
+    display: none;
+    li {
+      margin-left: 50rem;
+      margin-bottom: 20rem;
+      color: var(--delta);
+      padding-top: 5rem;
+      border-bottom: 3rem var(--tagla) solid;
+    }
+
+    a:link {
+      color: var(--delta);
+    }
+
+    a:visited {
+      color: var(--delta);
+    }
+
+    a:hover {
+      color: var(--tagla);
+    }
+
+    a:active {
+      color: var(--rose);
+    }
+  }
+
+  &__toggle:checked ~ &__dropl {
+    display: block;
+  }
+
+  @include respond-to("small") {
+    grid-template-columns: 1fr 2fr;
+    height: 100rem;
+    width: auto;
+
+    &__dropl {
+      grid-column: 2 / 3;
+      grid-row: 1 / 2;
+
+      display: flex;
+      font-size: 30rem;
+      align-items: center;
+      justify-content: center;
+      background: var(--chiboc);
+      text-decoration: none;
+      li {
+        margin: 20rem;
+        color: var(--delta);
+        text-decoration: none;
+        text-decoration: none;
+      }
+
+      a:link {
+        color: var(--delta);
+      }
+
+      a:visited {
+        color: var(--delta);
+      }
+
+      a:hover {
+        color: var(--tagla);
+      }
+
+      a:active {
+        color: var(--rose);
+      }
+    }
+
+    &__list {
+      display: flex;
+    }
+
+    &__logo {
+      grid-column: 1 / 2;
+      grid-row: 1 / 2;
+      height: 50rem;
+
+      justify-self: center;
+      text-decoration: none;
+      font-size: 20rem;
+      padding: 10rem;
+      width: 300rem;
+    }
+
+    &__hamburger {
+      grid-column: 1 / 2;
+      grid-row: 1 / 2;
+      display: none;
+    }
+
+    &__dleft {
+      grid-column: 1 / 2;
+      grid-row: 1 / 2;
+      align-self: center;
+      display: none;
+    }
+
+    &__dright {
+      grid-column: 2 / 3;
+      grid-row: 1 / 2;
+      align-self: center;
+      display: none;
+    }
+  }
+}
