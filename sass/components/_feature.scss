@@ -445,6 +445,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: min-content 1fr;
+    grid-gap: 20rem;
 
     &__properties {
       grid-column: 1 / 4;
@@ -459,7 +460,7 @@
       }
     }
 
-    &__tlist {
+    &__a-tlist {
       grid-column: 1 / 2;
       grid-row: 2 / 3;
       justify-self: center;
@@ -467,14 +468,14 @@
       margin-top: 160rem;
     }
 
-    &__s-tlist {
+    &__a-s-tlist {
       grid-column: 2 / 3;
       grid-row: 2 / 3;
       justify-self: center;
       align-self: center;
     }
 
-    &__t-tlist {
+    &__a-t-tlist {
       grid-column: 3 / -1;
       grid-row: 2 / 3;
       justify-self: center;

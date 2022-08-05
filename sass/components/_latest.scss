@@ -189,18 +189,21 @@
       grid-column: 1 / 2;
       grid-row: 2 / 3;
       justify-self: center;
+      align-self: center;
     }
 
     &__sstage {
       grid-column: 2 / 3;
       grid-row: 2 / 3;
       justify-self: center;
+      align-self: center;
     }
 
     &__tstage {
       grid-column: 3 / 4;
       grid-row: 2 / 3;
       justify-self: center;
+      align-self: center;
     }
   }
 }
