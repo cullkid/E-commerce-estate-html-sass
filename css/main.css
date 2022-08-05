@@ -733,7 +733,7 @@ h1 {
 
 .section__search input {
   width: 350rem;
-  color: var(--delta);
+  color: var(--luxo);
   padding: 5rem;
 }
 
@@ -745,7 +745,7 @@ h1 {
 
 .section__min-prices input {
   width: 350rem;
-  color: var(--delta);
+  color: var(--luxo);
   padding: 5rem;
 }
 
@@ -763,7 +763,7 @@ h1 {
 
 .section__max-prices input {
   width: 350rem;
-  color: var(--delta);
+  color: var(--luxo);
   padding: 5rem;
 }
 
