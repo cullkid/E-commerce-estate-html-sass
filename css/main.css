@@ -580,10 +580,12 @@ h1 {
 
 .nav__dropl a:hover {
   color: var(--tagla);
+  font-size: 30rem;
 }
 
 .nav__dropl a:active {
   color: var(--contrast);
+  font-size: 30rem;
 }
 
 .nav__toggle:checked ~ .nav__dropl {
@@ -631,6 +633,7 @@ h1 {
   }
   .nav__dropl a:hover {
     color: var(--tagla);
+    font-size: 35rem;
   }
   .nav__dropl a:active {
     color: var(--contrast);
