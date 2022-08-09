@@ -1712,6 +1712,12 @@ h1 {
 .porpular {
   width: 660rem;
   background: var(--elements);
+  /* &__hover {
+
+    a.hover:hover {
+      background: var(--tagla);
+    }
+  }*/
 }
 
 .porpular__header {
@@ -1729,6 +1735,7 @@ h1 {
   width: 465rem;
   height: 550rem;
   margin-left: 110rem;
+  border-radius: 20rem;
 }
 
 .porpular__alg p {
@@ -1747,6 +1754,7 @@ h1 {
   width: 465rem;
   height: 550rem;
   margin-left: 110rem;
+  border-radius: 20rem;
 }
 
 .porpular__cas p {
@@ -1765,6 +1773,7 @@ h1 {
   width: 465rem;
   height: 550rem;
   margin-left: 110rem;
+  border-radius: 20rem;
 }
 
 .porpular__lisbon p {
@@ -1783,6 +1792,7 @@ h1 {
   width: 465rem;
   height: 550rem;
   margin-left: 110rem;
+  border-radius: 20rem;
 }
 
 .porpular__coim p {
@@ -1801,6 +1811,7 @@ h1 {
   width: 465rem;
   height: 550rem;
   margin-left: 110rem;
+  border-radius: 20rem;
 }
 
 .porpular__porto p {
@@ -1819,6 +1830,7 @@ h1 {
   width: 465rem;
   height: 550rem;
   margin-left: 110rem;
+  border-radius: 20rem;
 }
 
 .porpular__brag p {

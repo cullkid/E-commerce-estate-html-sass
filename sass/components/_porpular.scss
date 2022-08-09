@@ -12,11 +12,19 @@
     color: var(--beta);
   }
 
+  /* &__hover {
+
+    a.hover:hover {
+      background: var(--tagla);
+    }
+  }*/
+
   &__alg {
     background-image: url(../../images/porpular-1.jpg);
     width: 465rem;
     height: 550rem;
     margin-left: 110rem;
+    border-radius: 20rem;
 
     p {
       display: inline-block;
@@ -35,6 +43,7 @@
     width: 465rem;
     height: 550rem;
     margin-left: 110rem;
+    border-radius: 20rem;
 
     p {
       display: inline-block;
@@ -53,6 +62,7 @@
     width: 465rem;
     height: 550rem;
     margin-left: 110rem;
+    border-radius: 20rem;
 
     p {
       display: inline-block;
@@ -71,6 +81,7 @@
     width: 465rem;
     height: 550rem;
     margin-left: 110rem;
+    border-radius: 20rem;
 
     p {
       display: inline-block;
@@ -89,6 +100,7 @@
     width: 465rem;
     height: 550rem;
     margin-left: 110rem;
+    border-radius: 20rem;
 
     p {
       display: inline-block;
@@ -107,6 +119,7 @@
     width: 465rem;
     height: 550rem;
     margin-left: 110rem;
+    border-radius: 20rem;
 
     p {
       display: inline-block;
