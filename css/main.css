@@ -928,6 +928,10 @@ h1 {
   background-size: cover;
 }
 
+.feature .hover:hover {
+  border: 4rem var(--alert) solid;
+}
+
 .feature__id {
   display: -webkit-box;
   display: -ms-flexbox;
