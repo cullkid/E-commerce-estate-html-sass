@@ -1864,7 +1864,8 @@ h1 {
   border: 3rem var(--beta) solid;
   color: var(--delta);
   background: var(--tagla);
-  border-radius: 20rem;
+  border-radius: 100%;
+  padding: 10rem;
 }
 
 .porpular__previ p {
@@ -1873,7 +1874,8 @@ h1 {
   border: 3rem var(--beta) solid;
   color: var(--delta);
   background: var(--tagla);
-  border-radius: 20rem;
+  border-radius: 100%;
+  padding: 10rem;
 }
 
 @media (min-width: 767px) {
@@ -1998,21 +2000,23 @@ h1 {
   }
   .porpular__next p {
     font-weight: bolder;
-    font-size: 30rem;
+    font-size: 50rem;
     border: 3rem var(--beta) solid;
     color: var(--delta);
     background: var(--tagla);
-    border-radius: 20rem;
+    border-radius: 100%;
     margin-left: 180rem;
+    padding: 10rem;
   }
   .porpular__previ p {
     font-weight: bolder;
-    font-size: 30rem;
+    font-size: 50rem;
     border: 3rem var(--beta) solid;
     color: var(--delta);
     background: var(--tagla);
-    border-radius: 20rem;
+    border-radius: 100%;
     margin-right: 180rem;
+    padding: 10rem;
   }
 }
 /*# sourceMappingURL=main.css.map */

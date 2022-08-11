@@ -149,7 +149,8 @@
       border: 3rem var(--beta) solid;
       color: var(--delta);
       background: var(--tagla);
-      border-radius: 20rem;
+      border-radius: 100%;
+      padding: 10rem;
     }
   }
 
@@ -160,7 +161,8 @@
       border: 3rem var(--beta) solid;
       color: var(--delta);
       background: var(--tagla);
-      border-radius: 20rem;
+      border-radius: 100%;
+      padding: 10rem;
     }
   }
 
@@ -238,24 +240,26 @@
     &__next {
       p {
         font-weight: bolder;
-        font-size: 30rem;
+        font-size: 50rem;
         border: 3rem var(--beta) solid;
         color: var(--delta);
         background: var(--tagla);
-        border-radius: 20rem;
+        border-radius: 100%;
         margin-left: 180rem;
+        padding: 10rem;
       }
     }
 
     &__previ {
       p {
         font-weight: bolder;
-        font-size: 30rem;
+        font-size: 50rem;
         border: 3rem var(--beta) solid;
         color: var(--delta);
         background: var(--tagla);
-        border-radius: 20rem;
+        border-radius: 100%;
         margin-right: 180rem;
+        padding: 10rem;
       }
     }
   }
