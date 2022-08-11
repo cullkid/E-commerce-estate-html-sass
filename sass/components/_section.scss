@@ -14,6 +14,18 @@
     text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
   }
 
+  h1::first-letter {
+    font-size: 80rem;
+    height: 10rem;
+    color: var(--alert);
+    /*font-style: oblique;*/
+    font-family: "Courier New", Courier, monospace;
+  }
+
+  h1:hover {
+    color: var(--alert);
+  }
+
   &__form {
     display: flex;
     flex-direction: column;
@@ -99,6 +111,17 @@
       margin-left: 300rem;
     }
 
+    h1::first-letter {
+      font-size: 80rem;
+      height: 10rem;
+      color: var(--alert);
+      font-family: "Courier New", Courier, monospace;
+    }
+
+    h1:hover {
+      color: var(--alert);
+    }
+
     &__form {
       width: 2300rem;
       padding: 40rem;
@@ -149,6 +172,10 @@
         width: 600rem;
         padding: 20rem;
         font-size: 30rem;
+      }
+
+      input:hover {
+        background: var(--sadxo);
       }
     }
   }

@@ -6,12 +6,18 @@
     min-width: 728rem;
     height: 80rem;
     background: var(--delta);
+
     h2 {
       text-align: center;
       margin-top: 23rem;
       font-weight: bolder;
       font-size: 25rem;
       color: var(--beta);
+    }
+
+    h2::first-letter {
+      font-size: 70rem;
+      font-family: "Courier New", Courier, monospace;
     }
   }
 
@@ -25,10 +31,6 @@
     background-size: cover;
   }
 
-  &__tlist:hover {
-    border: 5rem var(--contrasr) thick;
-  }
-
   &__id {
     display: flex;
     justify-content: space-around;
@@ -39,6 +41,11 @@
       font-weight: bolder;
       margin-top: 20rem;
       color: var(--beta);
+    }
+
+    header:hover {
+      color: var(--alert);
+      font-size: 30rem;
     }
 
     img {
@@ -71,6 +78,10 @@
       color: var(--gamma);
       margin-top: 15rem;
       margin-left: 10rem;
+    }
+
+    header::first-letter {
+      font-size: 25rem;
     }
   }
 
@@ -110,6 +121,10 @@
       margin-left: 20rem;
       color: var(--luxo);
     }
+
+    p::first-letter {
+      font-size: 25rem;
+    }
   }
 
   &__bath {
@@ -125,6 +140,10 @@
       margin-left: 25rem;
       color: var(--luxo);
     }
+
+    p::first-letter {
+      font-size: 25rem;
+    }
   }
 
   &__location {
@@ -139,6 +158,10 @@
     p {
       margin-left: 20rem;
       color: var(--luxo);
+    }
+
+    p::first-letter {
+      font-size: 25rem;
     }
   }
 
@@ -182,6 +205,11 @@
       color: var(--beta);
     }
 
+    header:hover {
+      color: var(--alert);
+      font-size: 30rem;
+    }
+
     img {
       font-size: 20rem;
       margin-top: 20rem;
@@ -212,6 +240,10 @@
       color: var(--gamma);
       margin-top: 15rem;
       margin-left: 10rem;
+    }
+
+    header::first-letter {
+      font-size: 20rem;
     }
   }
 
@@ -251,6 +283,10 @@
       margin-left: 20rem;
       color: var(--luxo);
     }
+
+    p::first-letter {
+      font-size: 25rem;
+    }
   }
 
   &__s-bath {
@@ -266,6 +302,10 @@
       margin-left: 25rem;
       color: var(--luxo);
     }
+
+    p::first-letter {
+      font-size: 25rem;
+    }
   }
 
   &__s-location {
@@ -280,6 +320,10 @@
     p {
       margin-left: 20rem;
       color: var(--luxo);
+    }
+
+    p::first-letter {
+      font-size: 30rem;
     }
   }
 
@@ -323,6 +367,11 @@
       color: var(--beta);
     }
 
+    header:hover {
+      color: var(--alert);
+      font-size: 30rem;
+    }
+
     img {
       font-size: 20rem;
       margin-top: 20rem;
@@ -353,6 +402,10 @@
       color: var(--gamma);
       margin-top: 15rem;
       margin-left: 10rem;
+    }
+
+    header::first-letter {
+      font-size: 25rem;
     }
   }
 
@@ -392,6 +445,10 @@
       margin-left: 20rem;
       color: var(--luxo);
     }
+
+    p::first-letter {
+      font-size: 25rem;
+    }
   }
 
   &__t-bath {
@@ -407,6 +464,10 @@
       margin-left: 25rem;
       color: var(--luxo);
     }
+
+    p::first-letter {
+      font-size: 25rem;
+    }
   }
 
   &__t-location {
@@ -421,6 +482,10 @@
     p {
       margin-left: 20rem;
       color: var(--luxo);
+    }
+
+    p::first-letter {
+      font-size: 25rem;
     }
   }
 
@@ -457,6 +522,11 @@
         font-size: 40rem;
         font-weight: bolder;
         margin-top: 70rem;
+      }
+
+      h2::first-letter {
+        font-size: 70rem;
+        font-family: "Courier New", Courier, monospace;
       }
     }
 

@@ -13,7 +13,7 @@
   --luxo: #517457;
   --tagla: #b79a05;
   --chiboc: #3a5290;
-  --sadxo: #52639d;
+  --sadxo: #dfd566;
   --bright: #6c8559;
   --rose: #110944;
 }
@@ -710,6 +710,18 @@ h1 {
   text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
 }
 
+.section h1::first-letter {
+  font-size: 80rem;
+  height: 10rem;
+  color: var(--alert);
+  /*font-style: oblique;*/
+  font-family: "Courier New", Courier, monospace;
+}
+
+.section h1:hover {
+  color: var(--alert);
+}
+
 .section__form {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -802,6 +814,15 @@ h1 {
     font-size: 50rem;
     margin-left: 300rem;
   }
+  .section h1::first-letter {
+    font-size: 80rem;
+    height: 10rem;
+    color: var(--alert);
+    font-family: "Courier New", Courier, monospace;
+  }
+  .section h1:hover {
+    color: var(--alert);
+  }
   .section__form {
     width: 2300rem;
     padding: 40rem;
@@ -863,6 +884,9 @@ h1 {
     padding: 20rem;
     font-size: 30rem;
   }
+  .section__submit input:hover {
+    background: var(--sadxo);
+  }
 }
 
 .feature {
@@ -889,6 +913,11 @@ h1 {
   color: var(--beta);
 }
 
+.feature__properties h2::first-letter {
+  font-size: 70rem;
+  font-family: "Courier New", Courier, monospace;
+}
+
 .feature__tlist {
   width: 465rem;
   height: 400rem;
@@ -897,10 +926,6 @@ h1 {
   background-image: url(../../images/house-intirior.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-}
-
-.feature__tlist:hover {
-  border: 5rem var(--contrasr) thick;
 }
 
 .feature__id {
@@ -917,6 +942,11 @@ h1 {
   font-weight: bolder;
   margin-top: 20rem;
   color: var(--beta);
+}
+
+.feature__id header:hover {
+  color: var(--alert);
+  font-size: 30rem;
 }
 
 .feature__id img {
@@ -956,6 +986,10 @@ h1 {
   color: var(--gamma);
   margin-top: 15rem;
   margin-left: 10rem;
+}
+
+.feature__header header::first-letter {
+  font-size: 25rem;
 }
 
 .feature__price {
@@ -1003,6 +1037,10 @@ h1 {
   color: var(--luxo);
 }
 
+.feature__bed p::first-letter {
+  font-size: 25rem;
+}
+
 .feature__bath {
   -ms-grid-column: 1;
   -ms-grid-column-span: 1;
@@ -1022,6 +1060,10 @@ h1 {
   color: var(--luxo);
 }
 
+.feature__bath p::first-letter {
+  font-size: 25rem;
+}
+
 .feature__location {
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
@@ -1039,6 +1081,10 @@ h1 {
 .feature__location p {
   margin-left: 20rem;
   color: var(--luxo);
+}
+
+.feature__location p::first-letter {
+  font-size: 25rem;
 }
 
 .feature__size {
@@ -1087,6 +1133,11 @@ h1 {
   color: var(--beta);
 }
 
+.feature__s-id header:hover {
+  color: var(--alert);
+  font-size: 30rem;
+}
+
 .feature__s-id img {
   font-size: 20rem;
   margin-top: 20rem;
@@ -1124,6 +1175,10 @@ h1 {
   color: var(--gamma);
   margin-top: 15rem;
   margin-left: 10rem;
+}
+
+.feature__s-header header::first-letter {
+  font-size: 20rem;
 }
 
 .feature__s-price {
@@ -1171,6 +1226,10 @@ h1 {
   color: var(--luxo);
 }
 
+.feature__s-bed p::first-letter {
+  font-size: 25rem;
+}
+
 .feature__s-bath {
   -ms-grid-column: 1;
   -ms-grid-column-span: 1;
@@ -1190,6 +1249,10 @@ h1 {
   color: var(--luxo);
 }
 
+.feature__s-bath p::first-letter {
+  font-size: 25rem;
+}
+
 .feature__s-location {
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
@@ -1207,6 +1270,10 @@ h1 {
 .feature__s-location p {
   margin-left: 20rem;
   color: var(--luxo);
+}
+
+.feature__s-location p::first-letter {
+  font-size: 30rem;
 }
 
 .feature__s-size {
@@ -1255,6 +1322,11 @@ h1 {
   color: var(--beta);
 }
 
+.feature__t-id header:hover {
+  color: var(--alert);
+  font-size: 30rem;
+}
+
 .feature__t-id img {
   font-size: 20rem;
   margin-top: 20rem;
@@ -1292,6 +1364,10 @@ h1 {
   color: var(--gamma);
   margin-top: 15rem;
   margin-left: 10rem;
+}
+
+.feature__t-header header::first-letter {
+  font-size: 25rem;
 }
 
 .feature__t-price {
@@ -1339,6 +1415,10 @@ h1 {
   color: var(--luxo);
 }
 
+.feature__t-bed p::first-letter {
+  font-size: 25rem;
+}
+
 .feature__t-bath {
   -ms-grid-column: 1;
   -ms-grid-column-span: 1;
@@ -1358,6 +1438,10 @@ h1 {
   color: var(--luxo);
 }
 
+.feature__t-bath p::first-letter {
+  font-size: 25rem;
+}
+
 .feature__t-location {
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
@@ -1375,6 +1459,10 @@ h1 {
 .feature__t-location p {
   margin-left: 20rem;
   color: var(--luxo);
+}
+
+.feature__t-location p::first-letter {
+  font-size: 25rem;
 }
 
 .feature__t-size {
@@ -1425,6 +1513,10 @@ h1 {
     font-size: 40rem;
     font-weight: bolder;
     margin-top: 70rem;
+  }
+  .feature__properties h2::first-letter {
+    font-size: 70rem;
+    font-family: "Courier New", Courier, monospace;
   }
   .feature__a-tlist {
     -ms-grid-column: 1;
