@@ -1,5 +1,5 @@
 :root {
-  --alpha: #2c3e50;
+  --alpha: #0c0e10;
   --beta: #0a7ed2;
   --gamma: #01060b;
   --delta: #fffafa;
@@ -583,7 +583,7 @@ h1 {
 .nav__dropl a:hover {
   color: var(--tagla);
   font-size: 30rem;
-  background: var(--delta);
+  /*background: var(--delta);*/
 }
 
 .nav__dropl a:active {
@@ -601,6 +601,8 @@ h1 {
         grid-template-columns: 1fr 2fr;
     height: 100rem;
     width: auto;
+    /*start of buy dropdown*/
+    /*end of buy dropdown*/
   }
   .nav__dropl {
     -ms-grid-column: 2;
@@ -644,7 +646,7 @@ h1 {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    /*border: none;*/
+    border-style: none;
   }
   .nav__list li {
     width: auto;
@@ -665,10 +667,42 @@ h1 {
   .nav__list a:hover {
     color: var(--tagla);
     font-size: 35rem;
-    background: var(--delta);
+    /*background: var(--delta);*/
   }
   .nav__list a:active {
     color: var(--contrast);
+  }
+  .nav__dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  .nav__dd-list {
+    display: none;
+    position: absolute;
+    background: var(--delta);
+    min-width: 160px;
+    -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+  .nav__dd-list .nav__list-child {
+    color: var(--alpha);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    z-index: 1;
+  }
+  .nav__dd-list .nav__list-child a {
+    color: var(--alpha);
+    display: visible;
+  }
+  .nav__dd-list .nav__list-child:hover {
+    background-color: var(--skills);
+    color: var(--alpha);
+  }
+  .nav__dropdown:hover .nav__dd-list {
+    display: block;
+    /*display: visible;*/
   }
   .nav__logo {
     -ms-grid-column: 1;
