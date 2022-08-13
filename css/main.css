@@ -1619,6 +1619,11 @@ h1 {
   margin-top: 10rem;
 }
 
+.latest__header h2::first-letter {
+  font-size: 70rem;
+  font-family: "Courier New", Courier, monospace;
+}
+
 .latest__fstage {
   border: 3rem var(--dus) solid;
   width: 465rem;
@@ -1665,6 +1670,11 @@ h1 {
   text-align: center;
   font-size: 25rem;
   border-radius: 20rem;
+  color: var(--delta);
+}
+
+.latest__fstage h3:hover {
+  background: var(--sadxo);
   color: var(--delta);
 }
 
@@ -1717,6 +1727,11 @@ h1 {
   color: var(--delta);
 }
 
+.latest__sstage h3:hover {
+  background: var(--sadxo);
+  color: var(--delta);
+}
+
 .latest__tstage {
   border: 3rem var(--dus) solid;
   width: 465rem;
@@ -1763,6 +1778,11 @@ h1 {
   text-align: center;
   font-size: 25rem;
   border-radius: 20rem;
+  color: var(--delta);
+}
+
+.latest__tstage h3:hover {
+  background: var(--sadxo);
   color: var(--delta);
 }
 
@@ -1835,12 +1855,6 @@ h1 {
 .porpular {
   width: 660rem;
   background: var(--elements);
-  /* &__hover {
-
-    a.hover:hover {
-      background: var(--tagla);
-    }
-  }*/
 }
 
 .porpular__header {
@@ -1851,6 +1865,11 @@ h1 {
   font-weight: bolder;
   font-size: 25rem;
   color: var(--beta);
+}
+
+.porpular h2::first-letter {
+  font-size: 70rem;
+  font-family: "Courier New", Courier, monospace;
 }
 
 .porpular__alg {
@@ -1966,6 +1985,10 @@ h1 {
   text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
 }
 
+.porpular__brag a:hover {
+  border: 4rem var(--contrast) solid;
+}
+
 .porpular__slist {
   width: 465rem;
   height: 80rem;
@@ -1991,6 +2014,11 @@ h1 {
   padding: 10rem;
 }
 
+.porpular__next p:hover {
+  background: var(--sadxo);
+  color: var(--delta);
+}
+
 .porpular__previ p {
   font-weight: bolder;
   font-size: 30rem;
@@ -1999,6 +2027,11 @@ h1 {
   background: var(--tagla);
   border-radius: 100%;
   padding: 10rem;
+}
+
+.porpular__previ p:hover {
+  background: var(--sadxo);
+  color: var(--delta);
 }
 
 @media (min-width: 767px) {
@@ -2041,6 +2074,11 @@ h1 {
         -ms-grid-row-align: center;
         align-self: center;
   }
+  .porpular .porpular__alg:hover {
+    border: 5rem var(--contrast) solid;
+    -webkit-box-shadow: 5rem var(--contrast) inset;
+            box-shadow: 5rem var(--contrast) inset;
+  }
   .porpular__f-cas {
     -ms-grid-column: 2;
     -ms-grid-column-span: 1;
@@ -2053,6 +2091,11 @@ h1 {
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
         align-self: center;
+  }
+  .porpular .porpular__cas:hover {
+    border: 5rem var(--contrast) solid;
+    -webkit-box-shadow: 5rem var(--contrast) inset;
+            box-shadow: 5rem var(--contrast) inset;
   }
   .porpular__f-lisbon {
     -ms-grid-column: 3;
@@ -2067,6 +2110,11 @@ h1 {
         -ms-grid-row-align: center;
         align-self: center;
   }
+  .porpular .porpular__lisbon:hover {
+    border: 5rem var(--contrast) solid;
+    -webkit-box-shadow: 5rem var(--contrast) inset;
+            box-shadow: 5rem var(--contrast) inset;
+  }
   .porpular__f-coim {
     -ms-grid-column: 1;
     -ms-grid-column-span: 1;
@@ -2079,6 +2127,11 @@ h1 {
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
         align-self: center;
+  }
+  .porpular .porpular__coim:hover {
+    border: 5rem var(--contrast) solid;
+    -webkit-box-shadow: 5rem var(--contrast) inset;
+            box-shadow: 5rem var(--contrast) inset;
   }
   .porpular__f-porto {
     -ms-grid-column: 2;
@@ -2093,6 +2146,11 @@ h1 {
         -ms-grid-row-align: center;
         align-self: center;
   }
+  .porpular .porpular__porto:hover {
+    border: 5rem var(--contrast) solid;
+    -webkit-box-shadow: 5rem var(--contrast) inset;
+            box-shadow: 5rem var(--contrast) inset;
+  }
   .porpular__f-brag {
     -ms-grid-column: 3;
     -ms-grid-column-span: 1;
@@ -2105,6 +2163,11 @@ h1 {
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
         align-self: center;
+  }
+  .porpular .porpular__brag:hover {
+    border: 5rem var(--contrast) solid;
+    -webkit-box-shadow: 5rem var(--contrast) inset;
+            box-shadow: 5rem var(--contrast) inset;
   }
   .porpular__slist {
     width: auto;

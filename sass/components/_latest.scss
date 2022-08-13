@@ -14,6 +14,11 @@
       color: var(--beta);
       margin-top: 10rem;
     }
+
+    h2::first-letter {
+      font-size: 70rem;
+      font-family: "Courier New", Courier, monospace;
+    }
   }
 
   /*Beggining of fstage*/
@@ -61,6 +66,11 @@
       text-align: center;
       font-size: 25rem;
       border-radius: 20rem;
+      color: var(--delta);
+    }
+
+    h3:hover {
+      background: var(--sadxo);
       color: var(--delta);
     }
   }
@@ -113,6 +123,11 @@
       border-radius: 20rem;
       color: var(--delta);
     }
+
+    h3:hover {
+      background: var(--sadxo);
+      color: var(--delta);
+    }
   }
   /*End of sstage*/
 
@@ -161,6 +176,11 @@
       text-align: center;
       font-size: 25rem;
       border-radius: 20rem;
+      color: var(--delta);
+    }
+
+    h3:hover {
+      background: var(--sadxo);
       color: var(--delta);
     }
   }
