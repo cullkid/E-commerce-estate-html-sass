@@ -563,11 +563,13 @@ h1 {
 }
 
 .nav__dropl li {
+  width: 200rem;
   margin-left: 50rem;
   margin-bottom: 20rem;
   color: var(--delta);
   padding-top: 5rem;
-  border-bottom: 3rem var(--tagla) solid;
+  border: 3rem var(--tagla) solid;
+  text-align: center;
 }
 
 .nav__dropl a:link {
@@ -581,6 +583,7 @@ h1 {
 .nav__dropl a:hover {
   color: var(--tagla);
   font-size: 30rem;
+  background: var(--delta);
 }
 
 .nav__dropl a:active {
@@ -619,29 +622,53 @@ h1 {
     background: var(--chiboc);
     text-decoration: none;
   }
-  .nav__dropl li {
-    margin: 20rem;
-    color: var(--delta);
-    text-decoration: none;
-    text-decoration: none;
-  }
-  .nav__dropl a:link {
-    color: var(--delta);
-  }
-  .nav__dropl a:visited {
-    color: var(--delta);
-  }
-  .nav__dropl a:hover {
-    color: var(--tagla);
-    font-size: 35rem;
-  }
-  .nav__dropl a:active {
-    color: var(--contrast);
-  }
   .nav__list {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .nav__list li a {
+    display: block;
+    margin: 10rem;
+    color: var(--delta);
+    text-decoration: none;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    /*border: none;*/
+  }
+  .nav__list li {
+    width: auto;
+    border-right: 3rem var(--delta) solid;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .nav__list a:link {
+    color: var(--contrast);
+  }
+  .nav__list a:visited {
+    color: var(--delta);
+  }
+  .nav__list a:hover {
+    color: var(--tagla);
+    font-size: 35rem;
+    background: var(--delta);
+  }
+  .nav__list a:active {
+    color: var(--contrast);
   }
   .nav__logo {
     -ms-grid-column: 1;

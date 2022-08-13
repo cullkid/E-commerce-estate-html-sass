@@ -58,12 +58,15 @@
     font-size: 20rem;
     font-weight: bold;
     display: none;
+
     li {
+      width: 200rem;
       margin-left: 50rem;
       margin-bottom: 20rem;
       color: var(--delta);
       padding-top: 5rem;
-      border-bottom: 3rem var(--tagla) solid;
+      border: 3rem var(--tagla) solid;
+      text-align: center;
     }
 
     a:link {
@@ -77,6 +80,7 @@
     a:hover {
       color: var(--tagla);
       font-size: 30rem;
+      background: var(--delta);
     }
 
     a:active {
@@ -104,15 +108,32 @@
       justify-content: center;
       background: var(--chiboc);
       text-decoration: none;
-      li {
-        margin: 20rem;
+    }
+
+    &__list {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      li a {
+        display: block;
+        margin: 10rem;
         color: var(--delta);
         text-decoration: none;
-        text-decoration: none;
+        align-items: center;
+        justify-content: center;
+        /*border: none;*/
+      }
+
+      li {
+        width: auto;
+        border-right: 3rem var(--delta) solid;
+        align-items: center;
+        justify-content: center;
       }
 
       a:link {
-        color: var(--delta);
+        color: var(--contrast);
       }
 
       a:visited {
@@ -122,15 +143,12 @@
       a:hover {
         color: var(--tagla);
         font-size: 35rem;
+        background: var(--delta);
       }
 
       a:active {
         color: var(--contrast);
       }
-    }
-
-    &__list {
-      display: flex;
     }
 
     &__logo {
