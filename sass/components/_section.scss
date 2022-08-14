@@ -43,9 +43,17 @@
     margin-bottom: 30rem;
 
     input {
-      width: 350rem;
+      width: 200rem;
       color: var(--luxo);
       padding: 5rem;
+      background: var(--delta);
+      border: 4rem var(--luxo) solid;
+      border-radius: 10rem;
+      transition: width 0.4s ease-in-out;
+    }
+
+    input:focus {
+      width: 350rem;
     }
   }
 
@@ -55,9 +63,16 @@
     margin-bottom: 30rem;
 
     input {
-      width: 350rem;
+      width: 200rem;
       color: var(--luxo);
       padding: 5rem;
+      border: 4rem var(--luxo) solid;
+      border-radius: 10rem;
+      transition: width 0.4s ease-in-out;
+    }
+
+    input:focus {
+      width: 350rem;
     }
 
     p {
@@ -73,9 +88,16 @@
     margin-bottom: 30rem;
 
     input {
-      width: 350rem;
+      width: 200rem;
       color: var(--luxo);
       padding: 5rem;
+      border: 4rem var(--luxo) solid;
+      border-radius: 10rem;
+      transition: width 0.4s ease-in-out;
+    }
+
+    input:focus {
+      width: 350rem;
     }
 
     p {
@@ -136,9 +158,14 @@
       grid-row: 1 / 2;
 
       input {
-        width: 600rem;
+        width: 200rem;
         padding: 20rem;
         font-size: 30rem;
+        transition: width 0.4s ease-in-out;
+      }
+
+      input:focus {
+        width: 600rem;
       }
     }
 
@@ -147,9 +174,14 @@
       grid-row: 1 / 2;
 
       input {
-        width: 600rem;
+        width: 200rem;
         padding: 20rem;
         font-size: 30rem;
+        transition: width 0.4s ease-in-out;
+      }
+
+      input:focus {
+        width: 600rem;
       }
     }
 
@@ -158,9 +190,13 @@
       grid-row: 2 / 3;
 
       input {
-        width: 600rem;
+        width: 200rem;
         padding: 20rem;
         font-size: 30rem;
+      }
+
+      input:focus {
+        width: 600rem;
       }
     }
 
@@ -172,6 +208,7 @@
         width: 600rem;
         padding: 20rem;
         font-size: 30rem;
+        transition: width 0.4s ease-in-out;
       }
 
       input:hover {
