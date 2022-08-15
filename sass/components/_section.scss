@@ -12,6 +12,7 @@
     color: var(--delta);
     margin-left: 20rem;
     text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+    transform: 1s ease-in-out;
   }
 
   h1::first-letter {
@@ -49,11 +50,11 @@
       background: var(--delta);
       border: 4rem var(--luxo) solid;
       border-radius: 10rem;
-      transition: width 0.4s ease-in-out;
+      transition: width 1s ease-in-out;
     }
 
-    input:focus {
-      width: 350rem;
+    input:hover {
+      width: 600rem;
     }
   }
 
@@ -68,11 +69,11 @@
       padding: 5rem;
       border: 4rem var(--luxo) solid;
       border-radius: 10rem;
-      transition: width 0.4s ease-in-out;
+      transition: width 1s ease-in-out;
     }
 
-    input:focus {
-      width: 350rem;
+    input:hover {
+      width: 600rem;
     }
 
     p {
@@ -93,11 +94,11 @@
       padding: 5rem;
       border: 4rem var(--luxo) solid;
       border-radius: 10rem;
-      transition: width 0.4s ease-in-out;
+      transition: width 1s ease-in-out;
     }
 
-    input:focus {
-      width: 350rem;
+    input:hover {
+      width: 600rem;
     }
 
     p {
@@ -161,10 +162,10 @@
         width: 200rem;
         padding: 20rem;
         font-size: 30rem;
-        transition: width 0.4s ease-in-out;
+        transition: width 1s ease-in-out;
       }
 
-      input:focus {
+      input:hover {
         width: 600rem;
       }
     }
@@ -177,10 +178,10 @@
         width: 200rem;
         padding: 20rem;
         font-size: 30rem;
-        transition: width 0.4s ease-in-out;
+        transition: width 1s ease-in-out;
       }
 
-      input:focus {
+      input:hover {
         width: 600rem;
       }
     }
@@ -208,7 +209,7 @@
         width: 600rem;
         padding: 20rem;
         font-size: 30rem;
-        transition: width 0.4s ease-in-out;
+        transition: width 1s ease-in-out;
       }
 
       input:hover {

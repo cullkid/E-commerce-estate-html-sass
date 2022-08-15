@@ -15,7 +15,7 @@
   --chiboc: #3a5290;
   --sadxo: #dfd566;
   --bright: #6c8559;
-  --rose: #110944;
+  --rose: #44092f;
 }
 
 @font-face {
@@ -622,7 +622,7 @@ h1 {
         -ms-flex-pack: center;
             justify-content: center;
     background: var(--chiboc);
-    text-decoration: none;
+    /*text-decoration: none;*/
   }
   .nav__list {
     display: -webkit-box;
@@ -634,6 +634,7 @@ h1 {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    /*transform: 1s ease-in-out;*/
   }
   .nav__list li a {
     display: block;
@@ -675,6 +676,7 @@ h1 {
   .nav__dropdown {
     position: relative;
     display: inline-block;
+    /*transform: 1s ease-in-out;*/
   }
   .nav__dd-list {
     display: none;
@@ -684,6 +686,7 @@ h1 {
     -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
             box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
+    /*transform: 1s ease-in-out;*/
   }
   .nav__dd-list .nav__list-child {
     color: var(--alpha);
@@ -695,13 +698,16 @@ h1 {
   .nav__dd-list .nav__list-child a {
     color: var(--alpha);
     display: visible;
+    /*transform: 1s ease-in-out;*/
   }
   .nav__dd-list .nav__list-child:hover {
     background-color: var(--skills);
     color: var(--alpha);
+    /*transform: 1s ease-in-out;*/
   }
   .nav__dropdown:hover .nav__dd-list {
     display: block;
+    /*transform: 1s ease-in-out;*/
     /*display: visible;*/
   }
   .nav__logo {
@@ -769,6 +775,8 @@ h1 {
   color: var(--delta);
   margin-left: 20rem;
   text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+  -webkit-transform: 1s ease-in-out;
+          transform: 1s ease-in-out;
 }
 
 .section h1::first-letter {
@@ -814,12 +822,12 @@ h1 {
   background: var(--delta);
   border: 4rem var(--luxo) solid;
   border-radius: 10rem;
-  -webkit-transition: width 0.4s ease-in-out;
-  transition: width 0.4s ease-in-out;
+  -webkit-transition: width 1s ease-in-out;
+  transition: width 1s ease-in-out;
 }
 
-.section__search input:focus {
-  width: 350rem;
+.section__search input:hover {
+  width: 600rem;
 }
 
 .section__min-prices {
@@ -834,12 +842,12 @@ h1 {
   padding: 5rem;
   border: 4rem var(--luxo) solid;
   border-radius: 10rem;
-  -webkit-transition: width 0.4s ease-in-out;
-  transition: width 0.4s ease-in-out;
+  -webkit-transition: width 1s ease-in-out;
+  transition: width 1s ease-in-out;
 }
 
-.section__min-prices input:focus {
-  width: 350rem;
+.section__min-prices input:hover {
+  width: 600rem;
 }
 
 .section__min-prices p {
@@ -860,12 +868,12 @@ h1 {
   padding: 5rem;
   border: 4rem var(--luxo) solid;
   border-radius: 10rem;
-  -webkit-transition: width 0.4s ease-in-out;
-  transition: width 0.4s ease-in-out;
+  -webkit-transition: width 1s ease-in-out;
+  transition: width 1s ease-in-out;
 }
 
-.section__max-prices input:focus {
-  width: 350rem;
+.section__max-prices input:hover {
+  width: 600rem;
 }
 
 .section__max-prices p {
@@ -930,10 +938,10 @@ h1 {
     width: 200rem;
     padding: 20rem;
     font-size: 30rem;
-    -webkit-transition: width 0.4s ease-in-out;
-    transition: width 0.4s ease-in-out;
+    -webkit-transition: width 1s ease-in-out;
+    transition: width 1s ease-in-out;
   }
-  .section__search input:focus {
+  .section__search input:hover {
     width: 600rem;
   }
   .section__min-prices {
@@ -948,10 +956,10 @@ h1 {
     width: 200rem;
     padding: 20rem;
     font-size: 30rem;
-    -webkit-transition: width 0.4s ease-in-out;
-    transition: width 0.4s ease-in-out;
+    -webkit-transition: width 1s ease-in-out;
+    transition: width 1s ease-in-out;
   }
-  .section__min-prices input:focus {
+  .section__min-prices input:hover {
     width: 600rem;
   }
   .section__max-prices {
@@ -982,8 +990,8 @@ h1 {
     width: 600rem;
     padding: 20rem;
     font-size: 30rem;
-    -webkit-transition: width 0.4s ease-in-out;
-    transition: width 0.4s ease-in-out;
+    -webkit-transition: width 1s ease-in-out;
+    transition: width 1s ease-in-out;
   }
   .section__submit input:hover {
     background: var(--sadxo);
@@ -991,7 +999,9 @@ h1 {
 }
 
 .feature {
-  background: var(--delta);
+  /*background: var(--delta);*/
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(50%, var(--delta)), to(var(--elements)));
+  background-image: linear-gradient(var(--delta) 50%, var(--elements));
   width: 660rem;
   /*end of css for first feature*/
   /*start of css for second feature*/
@@ -1665,7 +1675,9 @@ h1 {
 
 .latest {
   margin-top: 150rem;
-  background: var(--yert);
+  /*background: var(--yert);*/
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(50%, var(--yert)), to(var(--bright)));
+  background-image: linear-gradient(var(--yert) 50%, var(--bright));
   width: 660rem;
   padding-bottom: 10rem;
   /*Beggining of fstage*/
@@ -1699,14 +1711,17 @@ h1 {
 }
 
 .latest__fstage {
+  /*display: block;*/
   border: 3rem var(--dus) solid;
   width: 465rem;
   margin-left: 110rem;
   border-radius: 20rem;
   margin-top: 25rem;
   margin-bottom: 60rem;
-  padding-bottom: 50rem;
+  padding-top: 35rem;
+  padding-bottom: 100rem;
   background: var(--delta);
+  /*height: 90%;*/
 }
 
 .latest__fstage img {
@@ -1759,7 +1774,8 @@ h1 {
   border-radius: 20rem;
   margin-top: 25rem;
   margin-bottom: 60rem;
-  padding-bottom: 50rem;
+  padding-top: 20rem;
+  padding-bottom: 100rem;
   background: var(--delta);
 }
 
@@ -1813,7 +1829,7 @@ h1 {
   border-radius: 20rem;
   margin-top: 25rem;
   margin-bottom: 60rem;
-  padding-bottom: 50rem;
+  padding-bottom: 40rem;
   background: var(--delta);
 }
 
@@ -1880,7 +1896,7 @@ h1 {
     -ms-grid-row-span: 1;
     grid-row: 1 / 2;
     padding-bottom: 40rem;
-    padding-top: 40rem;
+    /*padding-top: 40rem;*/
   }
   .latest__header h2 {
     font-size: 40rem;
@@ -1897,6 +1913,7 @@ h1 {
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
         align-self: center;
+    padding-bottom: 30rem;
   }
   .latest__sstage {
     -ms-grid-column: 2;
@@ -1928,7 +1945,9 @@ h1 {
 
 .porpular {
   width: 660rem;
-  background: var(--elements);
+  /*background: var(--elements);*/
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(60%, var(--elements)), to(var(--rose)));
+  background-image: linear-gradient(to right, var(--elements) 60%, var(--rose));
 }
 
 .porpular__header {
@@ -2111,6 +2130,7 @@ h1 {
 @media (min-width: 767px) {
   .porpular {
     width: auto;
+    padding-bottom: 10rem;
   }
   .porpular__flist {
     display: -ms-grid;
@@ -2149,9 +2169,9 @@ h1 {
         align-self: center;
   }
   .porpular .porpular__alg:hover {
-    border: 5rem var(--contrast) solid;
-    -webkit-box-shadow: 5rem var(--contrast) inset;
-            box-shadow: 5rem var(--contrast) inset;
+    /*border: 5rem var(--contrast) solid;*/
+    -webkit-box-shadow: 5px 5px 10px 5px var(--contrast);
+            box-shadow: 5px 5px 10px 5px var(--contrast);
   }
   .porpular__f-cas {
     -ms-grid-column: 2;
@@ -2167,9 +2187,9 @@ h1 {
         align-self: center;
   }
   .porpular .porpular__cas:hover {
-    border: 5rem var(--contrast) solid;
-    -webkit-box-shadow: 5rem var(--contrast) inset;
-            box-shadow: 5rem var(--contrast) inset;
+    /*border: 5rem var(--contrast) solid;*/
+    -webkit-box-shadow: 5px 5px 10px 5px var(--contrast);
+            box-shadow: 5px 5px 10px 5px var(--contrast);
   }
   .porpular__f-lisbon {
     -ms-grid-column: 3;
@@ -2185,9 +2205,9 @@ h1 {
         align-self: center;
   }
   .porpular .porpular__lisbon:hover {
-    border: 5rem var(--contrast) solid;
-    -webkit-box-shadow: 5rem var(--contrast) inset;
-            box-shadow: 5rem var(--contrast) inset;
+    /*border: 5rem var(--contrast) solid;*/
+    -webkit-box-shadow: 5px 5px 10px 5px var(--elements);
+            box-shadow: 5px 5px 10px 5px var(--elements);
   }
   .porpular__f-coim {
     -ms-grid-column: 1;
@@ -2203,9 +2223,9 @@ h1 {
         align-self: center;
   }
   .porpular .porpular__coim:hover {
-    border: 5rem var(--contrast) solid;
-    -webkit-box-shadow: 5rem var(--contrast) inset;
-            box-shadow: 5rem var(--contrast) inset;
+    /*border: 5rem var(--contrast) solid;*/
+    -webkit-box-shadow: 5px 5px 10px 5px var(--contrast);
+            box-shadow: 5px 5px 10px 5px var(--contrast);
   }
   .porpular__f-porto {
     -ms-grid-column: 2;
@@ -2221,9 +2241,9 @@ h1 {
         align-self: center;
   }
   .porpular .porpular__porto:hover {
-    border: 5rem var(--contrast) solid;
-    -webkit-box-shadow: 5rem var(--contrast) inset;
-            box-shadow: 5rem var(--contrast) inset;
+    /*border: 5rem var(--contrast) solid;*/
+    -webkit-box-shadow: 5px 5px 10px 5px var(--contrast);
+            box-shadow: 5px 5px 10px 5px var(--contrast);
   }
   .porpular__f-brag {
     -ms-grid-column: 3;
@@ -2239,12 +2259,13 @@ h1 {
         align-self: center;
   }
   .porpular .porpular__brag:hover {
-    border: 5rem var(--contrast) solid;
-    -webkit-box-shadow: 5rem var(--contrast) inset;
-            box-shadow: 5rem var(--contrast) inset;
+    /*border: 5rem var(--contrast) solid;*/
+    -webkit-box-shadow: 5px 5px 10px 5px var(--elements);
+            box-shadow: 5px 5px 10px 5px var(--elements);
   }
   .porpular__slist {
     width: auto;
+    padding-bottom: 80rem;
     height: 80rem;
     /*margin-left: 110rem;*/
     margin-top: 100rem;
@@ -2258,6 +2279,36 @@ h1 {
         -ms-flex-align: center;
             align-items: center;
   }
+  .porpular__next {
+    position: relative;
+    -webkit-animation-name: mymove;
+            animation-name: mymove;
+    -webkit-animation-duration: 3s;
+            animation-duration: 3s;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    -webkit-animation-timing-function: ease-in-out;
+            animation-timing-function: ease-in-out;
+    animation-direction: reverse;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+  }
+  @-webkit-keyframes mymove {
+    from {
+      left: 0rem;
+    }
+    to {
+      right: 100rem;
+    }
+  }
+  @keyframes mymove {
+    from {
+      left: 0rem;
+    }
+    to {
+      right: 100rem;
+    }
+  }
   .porpular__next p {
     font-weight: bolder;
     font-size: 50rem;
@@ -2265,8 +2316,30 @@ h1 {
     color: var(--delta);
     background: var(--tagla);
     border-radius: 100%;
-    margin-left: 180rem;
+    margin-left: 300rem;
     padding: 10rem;
+  }
+  .porpular__previ {
+    position: relative;
+    -webkit-animation-name: mymove;
+            animation-name: mymove;
+    -webkit-animation-duration: 3s;
+            animation-duration: 3s;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    -webkit-animation-timing-function: ease-in-out;
+            animation-timing-function: ease-in-out;
+    /*animation-direction: alternate;*/
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+  }
+  @keyframes mymove {
+    from {
+      left: 0rem;
+    }
+    to {
+      right: 100rem;
+    }
   }
   .porpular__previ p {
     font-weight: bolder;
@@ -2275,7 +2348,7 @@ h1 {
     color: var(--delta);
     background: var(--tagla);
     border-radius: 100%;
-    margin-right: 180rem;
+    margin-right: 300rem;
     padding: 10rem;
   }
 }

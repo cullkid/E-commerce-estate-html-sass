@@ -107,13 +107,14 @@
       align-items: center;
       justify-content: center;
       background: var(--chiboc);
-      text-decoration: none;
+      /*text-decoration: none;*/
     }
 
     &__list {
       display: flex;
       align-items: center;
       justify-content: center;
+      /*transform: 1s ease-in-out;*/
 
       li a {
         display: block;
@@ -155,6 +156,7 @@
     &__dropdown {
       position: relative;
       display: inline-block;
+      /*transform: 1s ease-in-out;*/
     }
 
     &__dd-list {
@@ -164,6 +166,7 @@
       min-width: 160px;
       box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
       z-index: 1;
+      /*transform: 1s ease-in-out;*/
     }
 
     &__dd-list &__list-child {
@@ -176,16 +179,19 @@
       a {
         color: var(--alpha);
         display: visible;
+        /*transform: 1s ease-in-out;*/
       }
     }
 
     &__dd-list &__list-child:hover {
       background-color: var(--skills);
       color: var(--alpha);
+      /*transform: 1s ease-in-out;*/
     }
 
     &__dropdown:hover &__dd-list {
       display: block;
+      /*transform: 1s ease-in-out;*/
       /*display: visible;*/
     }
     /*end of buy dropdown*/

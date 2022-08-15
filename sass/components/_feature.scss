@@ -1,5 +1,6 @@
 .feature {
-  background: var(--delta);
+  /*background: var(--delta);*/
+  background-image: linear-gradient(var(--delta) 50%, var(--elements));
   width: 660rem;
 
   &__properties {

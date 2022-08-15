@@ -1,6 +1,7 @@
 .latest {
   margin-top: 150rem;
-  background: var(--yert);
+  /*background: var(--yert);*/
+  background-image: linear-gradient(var(--yert) 50%, var(--bright));
   width: 660rem;
   padding-bottom: 10rem;
 
@@ -23,14 +24,17 @@
 
   /*Beggining of fstage*/
   &__fstage {
+    /*display: block;*/
     border: 3rem var(--dus) solid;
     width: 465rem;
     margin-left: 110rem;
     border-radius: 20rem;
     margin-top: 25rem;
     margin-bottom: 60rem;
-    padding-bottom: 50rem;
+    padding-top: 35rem;
+    padding-bottom: 100rem;
     background: var(--delta);
+    /*height: 90%;*/
 
     img {
       width: 400rem;
@@ -84,7 +88,8 @@
     border-radius: 20rem;
     margin-top: 25rem;
     margin-bottom: 60rem;
-    padding-bottom: 50rem;
+    padding-top: 20rem;
+    padding-bottom: 100rem;
     background: var(--delta);
 
     img {
@@ -139,7 +144,7 @@
     border-radius: 20rem;
     margin-top: 25rem;
     margin-bottom: 60rem;
-    padding-bottom: 50rem;
+    padding-bottom: 40rem;
     background: var(--delta);
 
     img {
@@ -198,7 +203,7 @@
       grid-column: 2 / 3;
       grid-row: 1 / 2;
       padding-bottom: 40rem;
-      padding-top: 40rem;
+      /*padding-top: 40rem;*/
 
       h2 {
         font-size: 40rem;
@@ -210,6 +215,7 @@
       grid-row: 2 / 3;
       justify-self: center;
       align-self: center;
+      padding-bottom: 30rem;
     }
 
     &__sstage {

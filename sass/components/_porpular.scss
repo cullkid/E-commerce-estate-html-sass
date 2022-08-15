@@ -1,6 +1,7 @@
 .porpular {
   width: 660rem;
-  background: var(--elements);
+  /*background: var(--elements);*/
+  background-image: linear-gradient(to right, var(--elements) 60%, var(--rose));
 
   &__header {
     width: 465rem;
@@ -179,6 +180,7 @@
 
   @include respond-to("small") {
     width: auto;
+    padding-bottom: 10rem;
 
     &__flist {
       display: grid;
@@ -204,8 +206,8 @@
     }
 
     .porpular__alg:hover {
-      border: 5rem var(--contrast) solid;
-      box-shadow: 5rem var(--contrast) inset;
+      /*border: 5rem var(--contrast) solid;*/
+      box-shadow: 5px 5px 10px 5px var(--contrast);
     }
 
     &__f-cas {
@@ -216,8 +218,8 @@
     }
 
     .porpular__cas:hover {
-      border: 5rem var(--contrast) solid;
-      box-shadow: 5rem var(--contrast) inset;
+      /*border: 5rem var(--contrast) solid;*/
+      box-shadow: 5px 5px 10px 5px var(--contrast);
     }
 
     &__f-lisbon {
@@ -228,8 +230,8 @@
     }
 
     .porpular__lisbon:hover {
-      border: 5rem var(--contrast) solid;
-      box-shadow: 5rem var(--contrast) inset;
+      /*border: 5rem var(--contrast) solid;*/
+      box-shadow: 5px 5px 10px 5px var(--elements);
     }
 
     &__f-coim {
@@ -240,8 +242,8 @@
     }
 
     .porpular__coim:hover {
-      border: 5rem var(--contrast) solid;
-      box-shadow: 5rem var(--contrast) inset;
+      /*border: 5rem var(--contrast) solid;*/
+      box-shadow: 5px 5px 10px 5px var(--contrast);
     }
 
     &__f-porto {
@@ -252,8 +254,8 @@
     }
 
     .porpular__porto:hover {
-      border: 5rem var(--contrast) solid;
-      box-shadow: 5rem var(--contrast) inset;
+      /*border: 5rem var(--contrast) solid;*/
+      box-shadow: 5px 5px 10px 5px var(--contrast);
     }
 
     &__f-brag {
@@ -264,12 +266,13 @@
     }
 
     .porpular__brag:hover {
-      border: 5rem var(--contrast) solid;
-      box-shadow: 5rem var(--contrast) inset;
+      /*border: 5rem var(--contrast) solid;*/
+      box-shadow: 5px 5px 10px 5px var(--elements);
     }
 
     &__slist {
       width: auto;
+      padding-bottom: 80rem;
       height: 80rem;
       /*margin-left: 110rem;*/
       margin-top: 100rem;
@@ -279,6 +282,23 @@
     }
 
     &__next {
+      position: relative;
+      animation-name: mymove;
+      animation-duration: 3s;
+      animation-iteration-count: infinite;
+      animation-timing-function: ease-in-out;
+      animation-direction: reverse;
+      animation-fill-mode: forwards;
+
+      @keyframes mymove {
+        from {
+          left: 0rem;
+        }
+        to {
+          right: 100rem;
+        }
+      }
+
       p {
         font-weight: bolder;
         font-size: 50rem;
@@ -286,12 +306,29 @@
         color: var(--delta);
         background: var(--tagla);
         border-radius: 100%;
-        margin-left: 180rem;
+        margin-left: 300rem;
         padding: 10rem;
       }
     }
 
     &__previ {
+      position: relative;
+      animation-name: mymove;
+      animation-duration: 3s;
+      animation-iteration-count: infinite;
+      animation-timing-function: ease-in-out;
+      /*animation-direction: alternate;*/
+      animation-fill-mode: forwards;
+
+      @keyframes mymove {
+        from {
+          left: 0rem;
+        }
+        to {
+          right: 100rem;
+        }
+      }
+
       p {
         font-weight: bolder;
         font-size: 50rem;
@@ -299,7 +336,7 @@
         color: var(--delta);
         background: var(--tagla);
         border-radius: 100%;
-        margin-right: 180rem;
+        margin-right: 300rem;
         padding: 10rem;
       }
     }
