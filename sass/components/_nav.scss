@@ -163,6 +163,7 @@
       display: none;
       position: absolute;
       background: var(--delta);
+      border-radius: 10rem;
       min-width: 160px;
       box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
       z-index: 1;
@@ -186,15 +187,32 @@
     &__dd-list &__list-child:hover {
       background-color: var(--skills);
       color: var(--alpha);
+      visibility: visible;
+      z-index: 1;
       /*transform: 1s ease-in-out;*/
     }
 
     &__dropdown:hover &__dd-list {
       display: block;
+      visibility: visible;
+      z-index: 1;
       /*transform: 1s ease-in-out;*/
       /*display: visible;*/
     }
     /*end of buy dropdown*/
+
+    /*creation of tooltip arrow to the buy-dropdown list*/
+    &__dropdown &__dd-list &__list-child::after {
+      content: "";
+      position: absolute;
+      bottom: 100%;
+      left: 50%;
+      margin-left: -4rem;
+      border-width: 15rem;
+      border-style: solid;
+      border-color: transparent transparent var(--delta) transparent;
+    }
+    /*end of creation tooltip arrow to buy-dropdown list*/
 
     &__logo {
       grid-column: 1 / 2;

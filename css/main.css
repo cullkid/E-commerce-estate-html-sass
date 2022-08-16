@@ -603,6 +603,8 @@ h1 {
     width: auto;
     /*start of buy dropdown*/
     /*end of buy dropdown*/
+    /*creation of tooltip arrow to the buy-dropdown list*/
+    /*end of creation tooltip arrow to buy-dropdown list*/
   }
   .nav__dropl {
     -ms-grid-column: 2;
@@ -682,6 +684,7 @@ h1 {
     display: none;
     position: absolute;
     background: var(--delta);
+    border-radius: 10rem;
     min-width: 160px;
     -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
             box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
@@ -703,12 +706,26 @@ h1 {
   .nav__dd-list .nav__list-child:hover {
     background-color: var(--skills);
     color: var(--alpha);
+    visibility: visible;
+    z-index: 1;
     /*transform: 1s ease-in-out;*/
   }
   .nav__dropdown:hover .nav__dd-list {
     display: block;
+    visibility: visible;
+    z-index: 1;
     /*transform: 1s ease-in-out;*/
     /*display: visible;*/
+  }
+  .nav__dropdown .nav__dd-list .nav__list-child::after {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -4rem;
+    border-width: 15rem;
+    border-style: solid;
+    border-color: transparent transparent var(--delta) transparent;
   }
   .nav__logo {
     -ms-grid-column: 1;
