@@ -1,5 +1,5 @@
 :root {
-  --alpha: #0c0e10;
+  --alpha: #090a0a;
   --beta: #0a7ed2;
   --gamma: #01060b;
   --delta: #fffafa;
@@ -15,7 +15,7 @@
   --chiboc: #3a5290;
   --sadxo: #dfd566;
   --bright: #6c8559;
-  --rose: #44092f;
+  --rose: #8f0d61;
 }
 
 @font-face {
@@ -678,34 +678,42 @@ h1 {
   .nav__dropdown {
     position: relative;
     display: inline-block;
+    border-radius: 20rem;
     /*transform: 1s ease-in-out;*/
   }
   .nav__dd-list {
     display: none;
     position: absolute;
-    background: var(--delta);
-    border-radius: 10rem;
-    min-width: 160px;
+    background: var(--alpha);
+    border-radius: 20rem;
+    min-width: 350px;
+    padding: 20rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10rem;
     -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
             box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
     /*transform: 1s ease-in-out;*/
   }
   .nav__dd-list .nav__list-child {
-    color: var(--alpha);
+    color: var(--delta);
+    /*min-width: 350px;*/
+    padding: 20rem;
+    /*background: var(--alpha);*/
     padding: 12px 16px;
     text-decoration: none;
     display: block;
     z-index: 1;
   }
-  .nav__dd-list .nav__list-child a {
-    color: var(--alpha);
-    display: visible;
-    /*transform: 1s ease-in-out;*/
+  .nav__last-child {
+    min-width: 350px;
+    margin: 20rem;
   }
   .nav__dd-list .nav__list-child:hover {
-    background-color: var(--skills);
-    color: var(--alpha);
+    min-width: 350px;
+    background-color: var(--rose);
+    color: var(--delta);
     visibility: visible;
     z-index: 1;
     /*transform: 1s ease-in-out;*/
@@ -714,6 +722,7 @@ h1 {
     display: block;
     visibility: visible;
     z-index: 1;
+    margin-top: 20rem;
     /*transform: 1s ease-in-out;*/
     /*display: visible;*/
   }
@@ -721,11 +730,11 @@ h1 {
     content: "";
     position: absolute;
     bottom: 100%;
-    left: 50%;
-    margin-left: -4rem;
+    left: 25%;
+    margin-left: -5rem;
     border-width: 15rem;
     border-style: solid;
-    border-color: transparent transparent var(--delta) transparent;
+    border-color: transparent transparent var(--alpha) transparent;
   }
   .nav__logo {
     -ms-grid-column: 1;
