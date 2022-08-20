@@ -1063,6 +1063,7 @@ h1 {
   background-image: url(../../images/house-intirior.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  /*object-fit: fill;*/
 }
 
 .feature .hover:hover {
@@ -1756,6 +1757,8 @@ h1 {
   margin: 20rem;
   -webkit-box-shadow: 0 3000rem rgba(0, 0, 0, 0.7) inset;
           box-shadow: 0 3000rem rgba(0, 0, 0, 0.7) inset;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .latest__fstage h2 {
@@ -1987,7 +1990,7 @@ h1 {
 }
 
 .porpular h2::first-letter {
-  font-size: 70rem;
+  font-size: 71rem;
   font-family: "Courier New", Courier, monospace;
 }
 
