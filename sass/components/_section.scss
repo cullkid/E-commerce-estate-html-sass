@@ -63,17 +63,30 @@
     margin-top: 30rem;
     margin-bottom: 30rem;
 
-    input {
+    article {
       width: 200rem;
-      color: var(--luxo);
-      padding: 5rem;
+      color: var(--alpha);
+      background: var(--delta);
+      /*padding: 8rem;*/
       border: 4rem var(--luxo) solid;
       border-radius: 10rem;
       transition: width 1s ease-in-out;
+      font-weight: bolder;
+      font-size: 20rem;
     }
 
-    input:hover {
-      width: 600rem;
+    a {
+      margin-left: 10rem;
+    }
+
+    span {
+      margin-left: 100rem;
+      font-weight: bolder;
+      font-size: 20rem;
+    }
+
+    article:hover {
+      width: 400rem;
     }
 
     p {
@@ -82,6 +95,8 @@
       display: none;
     }
   }
+
+
 
   &__max-prices {
     margin-left: 50rem;
@@ -98,13 +113,26 @@
     }
 
     input:hover {
-      width: 600rem;
+      width: 400rem;
     }
 
-    p {
-      margin-left: 350rem;
+    article {
+      margin-left: 250rem;
       color: var(--luxo);
       display: none;
+    }
+
+    .img {
+      display: inline;
+      background-color: var(--alpha);
+      margin-left: 10rem;
+      font-size: larger;
+      padding: 5rem;
+    }
+
+    .mright {
+      display: inline;
+      margin-right: 10rem;
     }
   }
 
