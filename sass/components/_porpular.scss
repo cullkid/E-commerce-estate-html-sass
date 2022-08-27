@@ -178,7 +178,11 @@
     }
   }
 
-  @include respond-to("small") {
+    /*START OF MEDIUM-SCREEN*/
+
+  /*END OF MEDIUM-SCREEN*/
+
+  @include respond-to("large") {
     width: auto;
     padding-bottom: 10rem;
 

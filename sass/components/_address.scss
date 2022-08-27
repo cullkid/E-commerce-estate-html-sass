@@ -287,8 +287,12 @@
   }
   /*End of porpular-link-style*/
 
+    /*START OF MEDIUM-SCREEN*/
+  
+  /*END OF MEDIUM-SCREEN*/
+
   /*Beggining of large-screen*/
-  @include respond-to("small") {
+  @include respond-to("large") {
     width: auto;
 
     &__location {

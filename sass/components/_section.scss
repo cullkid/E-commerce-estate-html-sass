@@ -96,8 +96,6 @@
     }
   }
 
-
-
   &__max-prices {
     margin-left: 50rem;
     margin-top: 30rem;
@@ -150,7 +148,11 @@
     }
   }
 
-  @include respond-to("small") {
+    /*START OF MEDIUM-SCREEN*/
+ 
+  /*END OF MEDIUM-SCREEN*/
+
+  @include respond-to("large") {
     width: auto;
     padding-bottom: 40rem;
     padding-bottom: 50rem;

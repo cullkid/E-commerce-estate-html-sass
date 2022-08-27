@@ -1,3 +1,4 @@
+/*START OF SMALL-SCREEN*/
 .nav {
   /*border: 3rem var(--tagla) dotted;*/
   display: grid;
@@ -92,8 +93,42 @@
   &__toggle:checked ~ &__dropl {
     display: block;
   }
+  /*END OF SMALL-SCREEN*/
 
-  @include respond-to("small") {
+  /*START OF MEDIUM-SCREEN*/
+  @include respond-to("medium") {
+    display: block;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+
+    &__logo {
+      position: relative;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    &__hamburger {
+      display: none;
+    }
+
+    &__dropl {
+      display: inline-block;
+    }
+
+    &__list {
+      display: inline-block;
+      margin-left: 150rem;
+      margin-top: 20rem;
+    }
+
+    &__dropdown {
+      display: none;
+    }
+  }
+  /*END OF MEDIUM-SCREEN*/
+
+  /* START OF LARGE-SCREEN*/
+  @include respond-to("large") {
     grid-template-columns: 1fr 2fr;
     height: 100rem;
     width: auto;
@@ -256,4 +291,5 @@
       display: none;
     }
   }
+  /*END OF LARGE-SCREEN*/
 }

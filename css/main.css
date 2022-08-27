@@ -472,6 +472,7 @@ h1 {
   color: var(--elements);
 }
 
+/*START OF SMALL-SCREEN*/
 .nav {
   /*border: 3rem var(--tagla) dotted;*/
   display: -ms-grid;
@@ -483,6 +484,11 @@ h1 {
       grid-template-rows: -webkit-max-content 1fr;
       grid-template-rows: max-content 1fr;
   background: var(--chiboc);
+  /*END OF SMALL-SCREEN*/
+  /*START OF MEDIUM-SCREEN*/
+  /*END OF MEDIUM-SCREEN*/
+  /* START OF LARGE-SCREEN*/
+  /*END OF LARGE-SCREEN*/
 }
 
 .nav__logo {
@@ -595,7 +601,34 @@ h1 {
   display: block;
 }
 
-@media (min-width: 767px) {
+@media (max-width: 991px) {
+  .nav {
+    display: block;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+  .nav__logo {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .nav__hamburger {
+    display: none;
+  }
+  .nav__dropl {
+    display: inline-block;
+  }
+  .nav__list {
+    display: inline-block;
+    margin-left: 150rem;
+    margin-top: 20rem;
+  }
+  .nav__dropdown {
+    display: none;
+  }
+}
+
+@media (min-width: 1300px) {
   .nav {
     -ms-grid-columns: 1fr 2fr;
         grid-template-columns: 1fr 2fr;
@@ -790,6 +823,8 @@ h1 {
   border: 3rem var(--tagla) solid;
   width: 660rem;
   background: var(--luxo);
+  /*START OF MEDIUM-SCREEN*/
+  /*END OF MEDIUM-SCREEN*/
 }
 
 .section h1 {
@@ -948,7 +983,7 @@ h1 {
   padding: 5rem;
 }
 
-@media (min-width: 767px) {
+@media (min-width: 1300px) {
   .section {
     width: auto;
     padding-bottom: 40rem;
@@ -1060,6 +1095,8 @@ h1 {
   /*end of css for second feature*/
   /*start of css for third feature*/
   /*end of css for third feature*/
+  /*START OF MEDIUM-SCREEN*/
+  /*END OF MEDIUM-SCREEN*/
 }
 
 .feature__properties {
@@ -1652,7 +1689,7 @@ h1 {
   color: var(--luxo);
 }
 
-@media (min-width: 767px) {
+@media (min-width: 1300px) {
   .feature {
     width: auto;
     display: -ms-grid;
@@ -1739,6 +1776,8 @@ h1 {
   /*End of sstage*/
   /*Begging of tstage*/
   /*End of tstage*/
+  /*START OF MEDIUM-SCREEN*/
+  /*END OF MEDIUM-SCREEN*/
   /*Beggining of desktop template*/
 }
 
@@ -1931,7 +1970,7 @@ h1 {
   color: var(--delta);
 }
 
-@media (min-width: 767px) {
+@media (min-width: 1300px) {
   .latest {
     width: auto;
     display: -ms-grid;
@@ -2003,6 +2042,8 @@ h1 {
   /*background: var(--elements);*/
   background-image: -webkit-gradient(linear, left top, right top, color-stop(60%, var(--elements)), to(var(--rose)));
   background-image: linear-gradient(to right, var(--elements) 60%, var(--rose));
+  /*START OF MEDIUM-SCREEN*/
+  /*END OF MEDIUM-SCREEN*/
 }
 
 .porpular__header {
@@ -2182,7 +2223,7 @@ h1 {
   color: var(--delta);
 }
 
-@media (min-width: 767px) {
+@media (min-width: 1300px) {
   .porpular {
     width: auto;
     padding-bottom: 10rem;
@@ -2426,6 +2467,8 @@ h1 {
   /*End of media-style*/
   /*Beggining of porpular-link-style*/
   /*End of porpular-link-style*/
+  /*START OF MEDIUM-SCREEN*/
+  /*END OF MEDIUM-SCREEN*/
   /*Beggining of large-screen*/
 }
 
@@ -2707,7 +2750,7 @@ h1 {
   color: var(--tagla);
 }
 
-@media (min-width: 767px) {
+@media (min-width: 1300px) {
   .address {
     width: auto;
   }

@@ -511,7 +511,11 @@
   }
   /*end of css for third feature*/
 
-  @include respond-to("small") {
+    /*START OF MEDIUM-SCREEN*/
+ 
+  /*END OF MEDIUM-SCREEN*/
+
+  @include respond-to("large") {
     width: auto;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;

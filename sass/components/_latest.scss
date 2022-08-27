@@ -192,8 +192,12 @@
   }
   /*End of tstage*/
 
+   /*START OF MEDIUM-SCREEN*/
+ 
+  /*END OF MEDIUM-SCREEN*/ 
+
   /*Beggining of desktop template*/
-  @include respond-to("small") {
+  @include respond-to("large") {
     width: auto;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
