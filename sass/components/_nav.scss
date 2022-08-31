@@ -53,7 +53,7 @@
   &__dropl {
     grid-column: 1 / 5;
     grid-row: 2 / 3;
-    background: var(--chiboc);
+    background: var(--alpha);
     padding-left: 20rem;
     padding-top: 10rem;
     font-size: 20rem;
@@ -68,6 +68,10 @@
       padding-top: 5rem;
       border: 3rem var(--tagla) solid;
       text-align: center;
+    }
+
+    &__dropdown {
+      display: none;
     }
 
     a:link {
@@ -92,6 +96,70 @@
 
   &__toggle:checked ~ &__dropl {
     display: block;
+    transition: width 1s ease-in-out;
+  }
+
+  /*start of buy dropdown*/
+  &__dropdown {
+    position: relative;
+    display: inline-block;
+    border-radius: 20rem;
+    /*transform: 1s ease-in-out;*/
+  }
+
+  &__dd-list {
+    display: none;
+    position: absolute;
+    background: var(--chiboc);
+    border-radius: 20rem;
+    min-width: 350px;
+    padding: 20rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    /*transform: 1s ease-in-out;*/
+  }
+
+  &__dd-list &__list-child {
+    color: var(--delta);
+    /*min-width: 350px;*/
+    padding: 20rem;
+    /*background: var(--alpha);*/
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    z-index: 1;
+  }
+
+  &__last-child {
+    min-width: 350px;
+    margin: 20rem;
+  }
+
+  &__dd-list &__list-child:hover {
+    min-width: 350px;
+    background-color: var(--rose);
+    color: var(--delta);
+    visibility: visible;
+    z-index: 1;
+
+    /*transform: 1s ease-in-out;*/
+  }
+
+  &__dropdown:hover &__dd-list {
+    display: block;
+    visibility: visible;
+    z-index: 1;
+    margin-top: 1rem;
+    /*transform: 1s ease-in-out;*/
+    /*display: visible;*/
+  }
+  /*end of buy dropdown*/
+
+  &__dd-list {
+    display: none;
   }
   /*END OF SMALL-SCREEN*/
 
@@ -120,6 +188,65 @@
       margin-left: 150rem;
       margin-top: 20rem;
     }
+
+    /*start of buy dropdown*/
+    &__dropdown {
+      position: relative;
+      display: inline-block;
+      border-radius: 20rem;
+      /*transform: 1s ease-in-out;*/
+    }
+
+    &__dd-list {
+      display: none;
+      position: absolute;
+      background: var(--alpha);
+      border-radius: 20rem;
+      min-width: 350px;
+      padding: 20rem;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 10rem;
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+      /*transform: 1s ease-in-out;*/
+    }
+
+    &__dd-list &__list-child {
+      color: var(--delta);
+      /*min-width: 350px;*/
+      padding: 20rem;
+      /*background: var(--alpha);*/
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      z-index: 1;
+    }
+
+    &__last-child {
+      min-width: 350px;
+      margin: 20rem;
+    }
+
+    &__dd-list &__list-child:hover {
+      min-width: 350px;
+      background-color: var(--rose);
+      color: var(--delta);
+      visibility: visible;
+      z-index: 1;
+
+      /*transform: 1s ease-in-out;*/
+    }
+
+    &__dropdown:hover &__dd-list {
+      display: block;
+      visibility: visible;
+      z-index: 1;
+      margin-top: 20rem;
+      /*transform: 1s ease-in-out;*/
+      /*display: visible;*/
+    }
+    /*end of buy dropdown*/
 
     &__dropdown {
       display: none;
