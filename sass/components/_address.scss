@@ -205,14 +205,19 @@
       font-size: 15rem;
       font-weight: bolder;
     }
+
+    a {
+      margin-top: 5rem;
+    }
   }
 
   &__ank {
+    margin-top: 10rem;
     margin-left: 150rem;
     text-decoration: none;
     list-style-type: none;
     color: var(--tagla);
-    font-size: 20rem;
+    font-size: 30rem;
   }
   /*End of newsletter-styleS*/
 
@@ -250,6 +255,11 @@
       margin: 10rem;
     }
   }
+
+  a:hover {
+    border-bottom: 5rem var(--contrast) solid;
+  }
+
   /*End of media-style*/
 
   /*Beggining of porpular-link-style*/
@@ -287,8 +297,8 @@
   }
   /*End of porpular-link-style*/
 
-    /*START OF MEDIUM-SCREEN*/
-  
+  /*START OF MEDIUM-SCREEN*/
+
   /*END OF MEDIUM-SCREEN*/
 
   /*Beggining of large-screen*/

@@ -64,7 +64,9 @@
     margin-bottom: 30rem;
 
     article {
-      width: 200rem;
+      display: block;
+      width: 400rem;
+      padding: 15rem;
       color: var(--alpha);
       background: var(--delta);
       /*padding: 8rem;*/
@@ -83,10 +85,11 @@
       margin-left: 100rem;
       font-weight: bolder;
       font-size: 20rem;
+      margin-top: 0;
     }
 
     article:hover {
-      width: 400rem;
+      width: 500rem;
     }
 
     p {
@@ -148,8 +151,8 @@
     }
   }
 
-    /*START OF MEDIUM-SCREEN*/
- 
+  /*START OF MEDIUM-SCREEN*/
+
   /*END OF MEDIUM-SCREEN*/
 
   @include respond-to("large") {

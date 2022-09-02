@@ -938,7 +938,9 @@ h1 {
 }
 
 .section__min-prices article {
-  width: 200rem;
+  display: block;
+  width: 400rem;
+  padding: 15rem;
   color: var(--alpha);
   background: var(--delta);
   /*padding: 8rem;*/
@@ -958,10 +960,11 @@ h1 {
   margin-left: 100rem;
   font-weight: bolder;
   font-size: 20rem;
+  margin-top: 0;
 }
 
 .section__min-prices article:hover {
-  width: 400rem;
+  width: 500rem;
 }
 
 .section__min-prices p {
@@ -2715,12 +2718,17 @@ h1 {
   font-weight: bolder;
 }
 
+.address__b-newsletter a {
+  margin-top: 5rem;
+}
+
 .address__ank {
+  margin-top: 10rem;
   margin-left: 150rem;
   text-decoration: none;
   list-style-type: none;
   color: var(--tagla);
-  font-size: 20rem;
+  font-size: 30rem;
 }
 
 .address__media {
@@ -2755,6 +2763,10 @@ h1 {
 
 .address__b-media img {
   margin: 10rem;
+}
+
+.address a:hover {
+  border-bottom: 5rem var(--contrast) solid;
 }
 
 .address__plink {
