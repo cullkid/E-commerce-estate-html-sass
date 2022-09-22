@@ -62,49 +62,65 @@
     <!--End of nav-->
 
     <!--Beggining of section-->
-    <section class="section">
+    <form action="" class="section">
+
         <h1>Explore Your portugal property Search here</h1>
 
-        <form class="section__form">
-            <div class="section__search">
-                <input type="text" placeholder="search" />
-            </div>
+        <div class="section__form">
+            <div class="section__flex">
+                <div class="section__flex-child">
+                    <fieldset class="section__search">
+                        <label for="search-site">
+                            <select name="search-site" id="search-site" required>
+                                <a href="#alverca">
+                                    <option value=""> SEARCH </option>
+                                </a>
+                                <option id="one" value="1">ALGARVE</option>
+                                <option value="2">LISBON</option>
+                                <option value="3">COIMBRA</option>
+                                <option value="4">CASCAIS</option>
+                                <option value="5">PORTO</option>
+                            </select>
+                        </label><br>
+                    </fieldset>
 
-            <div class="section__min-prices">
-                <article> <a href="#display" class="section__display">min <span> &or; </span> </a></article>
-                <div id="display">
-                    <p><img src="images/euro.svg" alt="" />100,000</p>
-                    <p><img src="images/euro.svg" alt="" />200,000</p>
-                    <p><img src="images/euro.svg" alt="" />100,000</p>
-                    <p><img src="images/euro.svg" alt="" />300,000</p>
-                    <p><img src="images/euro.svg" alt="" />400,000</p>
-                    <p><img src="images/euro.svg" alt="" />500,000</p>
+                    <fieldset class="section__min">
+                        <label for="min">
+                            <select name="min" id="min" required>
+                                <option value="">Min</option>
+                                <option value="1"><img src="images/euro.svg" alt="" />100,000</option>
+                                <option value="2"><img src="images/euro.svg" alt="" />200,000</option>
+                                <option value="3"><img src="images/euro.svg" alt="" />100,000</option>
+                                <option value="4"><img src="images/euro.svg" alt="" />300,000</option>
+                                <option value="5"><img src="images/euro.svg" alt="" />400,000</option>
+                                <option value="6"><img src="images/euro.svg" alt="" />500,000</option>
+                            </select>
+                        </label>
+                    </fieldset><br>
+                </div>
+
+                <div>
+                    <fieldset class="section__max">
+                        <label for="max">
+                            <select name="max" id="max" required>
+                                <option value="">Max</option>
+                                <option value="1"><img src="images/euro.svg" alt="" />100,000</option>
+                                <option value="2"><img src="images/euro.svg" alt="" />200,000</option>
+                                <option value="3"><img src="images/euro.svg" alt="" />100,000</option>
+                                <option value="4"><img src="images/euro.svg" alt="" />300,000</option>
+                                <option value="5"><img src="images/euro.svg" alt="" />400,000</option>
+                                <option value="6"><img src="images/euro.svg" alt="" />500,000</option>
+                            </select>
+                        </label>
+                    </fieldset><br>
+
+                    <fieldset class="section__submit">
+                        <input type="submit" id="submit" value="Submit" />
+                    </fieldset>
                 </div>
             </div>
-
-            <div class="section__max-prices">
-                <a href="#max"> <input type="text" placeholder="max" /></a>
-                <!--using javascript to display and hide the max-price-->
-                <button type="button" onclick="document.getElementById('max').style.display='block'"><img class="img"
-                        src="images/magnify.svg" alt=""></button>
-                <button type="button" onclick="document.getElementById('max').style.display='none'"><img
-                        class="img mright" src="images/magnify.svg" alt=""></button>
-                <!--end of javascript-->
-                <article id="max">
-                    <p><img src="images/euro.svg" alt="" />300,000</p>
-                    <p><img src="images/euro.svg" alt="" />600,000</p>
-                    <p><img src="images/euro.svg" alt="" />800,000</p>
-                    <p><img src="images/euro.svg" alt="" />1,000,000</p>
-                    <p><img src="images/euro.svg" alt="" />1,300,000</p>
-                    <p><img src="images/euro.svg" alt="" />1,500,000</p>
-                </article>
-            </div>
-
-            <div class="section__submit">
-                <input type="submit" value="search" />
-            </div>
-        </form>
-    </section>
+        </div>
+    </form>
     <!--End of section-->
 
     <!--Beggining of div feature-->
